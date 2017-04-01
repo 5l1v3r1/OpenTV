@@ -1,0 +1,20 @@
+<header>
+
+  <div class="row header blue light-blue z-depth-1">
+    <span class="title white-text">OpenTV</span>
+    <br />
+    <span class="subtitle white-text">Latest updates</span>
+  </div>
+
+</header>
+
+<main>
+
+  <div class="row">
+
+    <app-slide *ngFor="let cover of covers" [slide]="cover"></app-slide>
+    <app-slide add="true" (click)="updateCovers()" *ngIf="covers.length != temp_covers.length"></app-slide>
+
+  </div>
+
+</main>

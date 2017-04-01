@@ -1,0 +1,25 @@
+<div class="col s12 m6 l6 no-padding" *ngIf="!add">
+    <div class="vertical-slider">
+      <ul class="slider-item">
+
+        <div>
+          <div class="cover-image" [style.background-image]="getCssImage(slide.image)">
+            <span class="cover-title light bottom white-text">{{slide.title}}</span>
+            <div class="cover-channel">
+              <span class="white-text" >{{slide.channel}}</span>
+              <a class="waves-effect waves-teal btn-flat">AVANTI</a>
+            </div>
+          </div>
+        </div>
+
+      </ul>
+    </div>
+</div>
+
+<div class="col s12 m6 l6 no-padding" *ngIf="add">
+    <div class="card-image">
+      <div class="cover-image-preview waves-effect waves-light grey lighten-2">
+        <i class="large material-icons grey-text cover-add">add</i>
+      </div>
+    </div>
+</div>

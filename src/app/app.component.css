@@ -1,41 +1,3 @@
-.fill {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    opacity: 0.3;
-}
-
-.bottom {
-    margin-top: auto;
-}
-
-.title {
-    font-size: xx-large;
-}
-
-.subtitle {
-    font-size: large;
-}
-
-.light {
-    font-weight: lighter;
-}
-
-.no-padding {
-    padding: 0px !important;
-}
-
-.header {
-    padding-top: 50px;
-    padding-left: 50px;
-    padding-bottom: 50px;
-    margin-bottom: 0px !important;
-}
-
-.content {
-    padding: 18px;
-}
-
 .side-nav {
     min-width: 60px !important;
     width: 60px !important;
@@ -73,23 +35,4 @@
     line-height: normal;
     margin-left: 4px;
     font-size: medium;
-}
-
-.cover-image {
-    background: url('https://images.everyeye.it/img-notizie/the-flash-3-grant-gustin-spiega-conseguenze-flashpoint-barry-v3-268224-1280x720.jpg');
-    height: 500px;
-}
-
-.row {
-    margin-bottom: 0px !important;
-}
-
-header, main, footer {
-    margin-left: 60px;
-}
-
-@media only screen and (max-width : 992px) {
-    header, main, footer {
-        margin-left: 0;
-    }
 }

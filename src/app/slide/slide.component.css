@@ -1,0 +1,97 @@
+.cover-image {
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: 60% 0px;
+    animation-direction: alternate-reverse;
+    height: 500px;
+    cursor: pointer;
+    z-index: 0;
+    transition-property: all;
+	transition-duration: 0.5s;
+	transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+}
+
+.cover-image-preview {
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    transition-property: all;
+	transition-duration: .5s;
+	transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 0;
+}
+
+.cover-image-preview:hover {
+    background-color: #e91e63 !important;
+    box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.3);
+    z-index: 100;
+}
+
+.cover-image-preview:hover > .cover-add {
+    color: white !important;
+}
+
+.cover-channel {
+    text-align: left;
+    font-size: xx-large;
+    background: #e91e63;
+    padding: 16px;
+    transform: translate(0px, 10px);
+    opacity: 0;
+    transition-property: all;
+	transition-duration: .5s;
+	transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+}
+
+.cover-image:hover {
+    box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.3);
+    background-position: 60% -80px;
+    z-index: 100;
+}
+
+.cover-image:hover > .cover-channel { 
+    transform: translate(0px, 0px);
+    opacity: 100;
+}
+
+.cover-image:hover > .cover-title { 
+    margin-bottom: 0px;
+}
+
+.cover-title {
+    font-size: xx-large;
+    padding: 16px;
+    margin-bottom: -80px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.0));
+    transition-property: all;
+	transition-duration: 0.5s;
+	transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+}
+
+.vertical-slider {
+  position: relative;
+  top: 0;
+  height: 500px;
+  overflow: hidden;
+}
+
+.slider-item {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  animation-duration: 5s;
+  animation-timing-function: cubic-bezier(0, 1, 0.5, 1);
+}
+
+@keyframes Slide {
+	0% {bottom: 0;}
+	25% {bottom: 100%;}
+}

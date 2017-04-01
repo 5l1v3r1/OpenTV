@@ -12,6 +12,8 @@ export class AppComponent implements AfterViewInit {
   sidenavOpened: boolean;
 
   constructor() {
+    this.sidenavOpened = false;
+
     this.menu = [
       {
         icon: "receipt",
@@ -45,7 +47,7 @@ export class AppComponent implements AfterViewInit {
       }
     ];
 
-    this.sidenavOpened = false;
+    
   }
 
   toggleSidenav() {
