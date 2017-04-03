@@ -6,9 +6,16 @@ Open source TV for the 21st century.
 
 ## Installation
 
-To get started, clone the repo to your target directory. This app uses Webpack, and a few commands have been provided as scripts in `package.json`.
+To get started, clone the repo to your target directory.
 
+In one terminal run: 
 ```bash
-npm install
-npm start
+npm build
 ```
+to build the TypeScript files in watchmode.
+
+In another terminal run
+```bash
+npm run electron
+```
+to start the Electron app
