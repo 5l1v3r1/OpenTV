@@ -9,7 +9,6 @@ import { News } from "app/models/news";
 export class NewsComponent implements OnInit {
 
   news: News;
-  fs = require('fs');
 
   constructor() { 
     this.news = {

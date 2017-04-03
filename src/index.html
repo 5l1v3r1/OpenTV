@@ -3,7 +3,6 @@
 <head>
   <meta charset="utf-8">
   <title>OpenTV</title>
-  <base href="/">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -14,7 +13,12 @@
 </head>
 <body>
   <app-root>Loading...</app-root>
+
+  <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
+
+  <script>if (window.module) module = window.module;</script>
 </body>
 </html>
