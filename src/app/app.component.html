@@ -1,12 +1,2 @@
-<div *ngIf="sidenavOpened" class="fill black"></div>
-<ul #sidenav id="slide-out" class="side-nav fixed blue">
-  <li (click)="toggleSidenav();" class="container-horizontal side-nav-item">
-    <i class="material-icons white-text waves-effect waves-light">menu</i>
-  </li>
-  <li *ngFor="let item of menu" [ngClass]="{'bottom' : item.bottom}" class="container-horizontal side-nav-item valign-wrapper">
-    <i class="material-icons white-text waves-effect waves-light">{{item.icon}}</i>
-    <span *ngIf="sidenavOpened" class="white-text">{{item.title}}</span>
-  </li>
-</ul>
-
-<app-dashboard></app-dashboard>
+<app-sidebar></app-sidebar>
+<router-outlet></router-outlet>

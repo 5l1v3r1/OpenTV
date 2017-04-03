@@ -11,6 +11,8 @@ body, html {
     height: 100%;
     position: absolute;
     opacity: 0.3;
+    z-index: 10;
+    top: 0;
 }
 
 .bottom {
@@ -35,4 +37,29 @@ body, html {
 
 .content {
     padding: 18px;
+}
+
+.header {
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 0px !important;
+}
+
+.row {
+    margin-bottom: 0px !important;
+}
+
+main {
+    padding: 16px;
+}
+
+header, main, footer {
+    margin-left: 60px;
+}
+
+@media only screen and (max-width : 992px) {
+    header, main, footer {
+        margin-left: 0;
+    }
 }

@@ -1,6 +1,6 @@
 import { browser, element, by } from 'protractor';
 
-export class OpenTVPage {
+export class Angular2ElectronPage {
   navigateTo() {
     return browser.get('/');
   }

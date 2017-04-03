@@ -1,10 +1,10 @@
-import { OpenTVPage } from './app.po';
+import { Angular2ElectronPage } from './app.po';
 
-describe('open-tv App', () => {
-  let page: OpenTVPage;
+describe('angular2-electron App', () => {
+  let page: Angular2ElectronPage;
 
   beforeEach(() => {
-    page = new OpenTVPage();
+    page = new Angular2ElectronPage();
   });
 
   it('should display message saying app works', () => {

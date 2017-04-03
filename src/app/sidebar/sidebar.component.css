@@ -1,0 +1,38 @@
+.side-nav {
+    min-width: 60px !important;
+    width: 60px !important;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
+    transition-duration: 150ms;
+    transition-timing-function: ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-vertical {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-horizontal {
+    display: flex;
+    flex-direction: row;
+}
+
+.side-nav-item {
+    cursor: default;
+}
+
+.side-nav-item i {
+    padding: 18px;
+}
+
+.side-nav-item:hover {
+    background-color: #64b5f6;
+}
+
+.side-nav-item span {
+    vertical-align: middle;
+    line-height: normal;
+    margin-left: 4px;
+    font-size: medium;
+}

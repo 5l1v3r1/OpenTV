@@ -1,0 +1,18 @@
+.news {
+    margin: 4px;
+}
+
+.input-field {
+    margin-top: 0px !important;
+}
+
+#search {
+    margin-bottom: 0px !important;
+    padding-left: 0px !important;
+    border: none;
+    color: #212121 !important;
+}
+
+main {
+    padding: 0px !important;
+}

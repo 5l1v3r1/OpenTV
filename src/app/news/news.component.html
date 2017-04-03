@@ -1,0 +1,26 @@
+<header>
+
+  <div class="row header blue light-blue">
+      <div class="col s4">
+        <span class="title white-text">OpenTV</span>
+        <br />
+        <span class="subtitle white-text">Latest news</span>
+      </div>
+
+      <div class="col s8" style="display: flex">
+        <div class="col s12 m6 l4" *ngFor="let i of [0,1,2]">
+            <app-news-card [news]="news"></app-news-card>
+        </div>
+      </div>
+  </div>
+
+</header>
+
+<main>
+
+    <div class="input-field white z-depth-4 valign-wrapper" style="padding: 8px">
+        <i class="material-icons prefix valign grey-text">search</i>
+        <input id="search" type="search" placeholder="Search news" required>
+    </div>
+
+</main>
